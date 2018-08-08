@@ -22,7 +22,7 @@ echo "==> Cleaning up udev rules"
 /bin/rm -f /etc/udev/rules.d/70*
 
 echo "==> Remove the traces of the template MAC address and UUIDs"
-/bin/sed -i '/^\(HWADDR\|UUID\)=/d' /etc/sysconfig/network-scripts/ifcfg-eth0
+/bin/sed -i '/^\(HWADDR\|UUID\)=/d' /etc/sysconfig/network-scripts/ifcfg-*
 
 echo "==> Cleaning up tmp"
 /bin/rm -rf /tmp/*
